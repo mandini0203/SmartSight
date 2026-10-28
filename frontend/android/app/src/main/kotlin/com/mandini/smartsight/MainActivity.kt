@@ -1,4 +1,4 @@
-package net.zincat.smartsight
+package com.mandini.smartsight
 
 import io.flutter.embedding.android.FlutterActivity
 
