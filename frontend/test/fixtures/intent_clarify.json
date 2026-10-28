@@ -1,0 +1,32 @@
+{
+ "status_code": 200,
+ "body": {
+  "status": "NEEDS_CLARIFICATION",
+  "intent": "find_object",
+  "slots": {
+   "target_object": null,
+   "target_label": null,
+   "target_supported_by_detector": null,
+   "personal": false
+  },
+  "confidence": 0.3,
+  "matched_rules": [
+   "find_verb"
+  ],
+  "alternatives": [
+   {
+    "intent": "find_object",
+    "score": 0.6
+   }
+  ],
+  "clarification_question": "What would you like me to find?",
+  "message": "What would you like me to find?",
+  "normalised_text": "find",
+  "resolver": {
+   "name": "rule_based_intent",
+   "version": "1.0",
+   "is_trained_model": false,
+   "description": "Keyword/regex rules with weighted scoring (baseline; not a trained model)."
+  }
+ }
+}

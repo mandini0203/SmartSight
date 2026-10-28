@@ -1,0 +1,27 @@
+# SmartSight backend — versions verified on Windows 10 / Python 3.13 (CPU).
+fastapi==0.156.8
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+pydantic==2.13.2
+pydantic-settings==2.12.0
+
+# Inference and image processing
+ultralytics==8.4.124          # YOLOv8 runtime (AGPL-3.0)
+torch==2.14.1                 # CPU wheel is sufficient; see README for CUDA
+torchvision==0.29.1           # MobileNetV3 embeddings for personal-item matching
+opencv-python==4.13.0.92
+numpy==2.5.4
+pillow==13.0.0
+
+# YOLO-World text prompts (door / exit-sign detector) need OpenAI CLIP
+clip @ git+https://github.com/ultralytics/CLIP.git@7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40
+ftfy==6.3.1
+regex==2026.9.29
+
+# User accounts
+sqlalchemy==2.1.6
+argon2-cffi==25.1.0           # password hashing (Argon2id)
+pyjwt==2.12.1                 # access tokens
+google-auth==2.62.0           # Google Sign-In ID-token verification
+requests==2.33.1              # transport used by google-auth
+email-validator==2.3.0

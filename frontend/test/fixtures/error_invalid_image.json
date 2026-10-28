@@ -1,0 +1,11 @@
+{
+ "status_code": 422,
+ "body": {
+  "error": {
+   "code": "invalid_image",
+   "message": "'image' could not be decoded as an image.",
+   "details": null
+  },
+  "request_id": "568fef5da04c"
+ }
+}

@@ -1,0 +1,368 @@
+{
+ "status_code": 200,
+ "body": {
+  "detection": {
+   "frame": {
+    "width": 810,
+    "height": 1080,
+    "frame_id": null,
+    "captured_at": null
+   },
+   "timestamp": "2026-10-21T11:10:55.561313Z",
+   "detections": [
+    {
+     "id": 0,
+     "label": "bus",
+     "class_id": 5,
+     "confidence": 0.8734,
+     "bbox": {
+      "x1": 22.9,
+      "y1": 231.3,
+      "x2": 805.0,
+      "y2": 756.8
+     },
+     "bbox_normalised": {
+      "x1": 0.02824,
+      "y1": 0.21415,
+      "x2": 0.99383,
+      "y2": 0.70078
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "large",
+      "area_ratio": 0.4699,
+      "description": "straight ahead, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 4.75,
+      "low_metres": 4.08,
+      "high_metres": 6.15,
+      "confidence": 0.45,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical bus height of 3.00 m (range 2.80-3.60 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 1,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8657,
+     "bbox": {
+      "x1": 48.6,
+      "y1": 398.6,
+      "x2": 245.3,
+      "y2": 902.7
+     },
+     "bbox_normalised": {
+      "x1": 0.05994,
+      "y1": 0.36903,
+      "x2": 0.3029,
+      "y2": 0.83584
+     },
+     "position": {
+      "horizontal": "left",
+      "vertical": "middle",
+      "clock_direction": 11,
+      "clock_label": "11 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.1134,
+      "description": "on your left, at middle height, at 11 o'clock"
+     },
+     "distance": {
+      "metres": 2.8,
+      "low_metres": 2.28,
+      "high_metres": 3.38,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8528,
+     "bbox": {
+      "x1": 669.5,
+      "y1": 392.2,
+      "x2": 809.7,
+      "y2": 877.0
+     },
+     "bbox_normalised": {
+      "x1": 0.82651,
+      "y1": 0.36314,
+      "x2": 0.99965,
+      "y2": 0.81207
+     },
+     "position": {
+      "horizontal": "right",
+      "vertical": "middle",
+      "clock_direction": 13,
+      "clock_label": "1 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0777,
+      "description": "on your right, at middle height, at 1 o'clock"
+     },
+     "distance": {
+      "metres": 2.92,
+      "low_metres": 2.37,
+      "high_metres": 3.52,
+      "confidence": 0.49,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 3,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8252,
+     "bbox": {
+      "x1": 221.5,
+      "y1": 405.8,
+      "x2": 345.0,
+      "y2": 857.5
+     },
+     "bbox_normalised": {
+      "x1": 0.27348,
+      "y1": 0.37574,
+      "x2": 0.42589,
+      "y2": 0.79402
+     },
+     "position": {
+      "horizontal": "slightly_left",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0638,
+      "description": "slightly to your left, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.13,
+      "low_metres": 2.54,
+      "high_metres": 3.78,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    }
+   ],
+   "model": {
+    "name": "YOLOv8n (pretrained)",
+    "version": "yolov8n",
+    "is_trained_model": true,
+    "description": "Ultralytics YOLOv8 pretrained on COCO 2017. Not fine-tuned for SmartSight; recognises only its 80 COCO classes.",
+    "model_file": "yolov8n.pt",
+    "task": "detect",
+    "dataset": "COCO 2017 (80 classes)",
+    "licence": "AGPL-3.0 (Ultralytics); commercial use requires an Ultralytics Enterprise licence",
+    "num_classes": 80
+   },
+   "processing": {
+    "preprocess_ms": 5.9,
+    "inference_ms": 128.3,
+    "postprocess_ms": 2.7,
+    "total_ms": 174.3,
+    "confidence_threshold": 0.35,
+    "image_size": 640,
+    "device": "cpu"
+   },
+   "notes": [
+    "Only the detector's 80 COCO classes can be recognised; see GET /api/v1/detection/classes.",
+    "Distances are approximate monocular estimates based on typical object sizes."
+   ]
+  },
+  "signs": null,
+  "context": {
+   "task": "describe_surroundings",
+   "frame": {
+    "width": 810,
+    "height": 1080,
+    "frame_id": null,
+    "captured_at": null
+   },
+   "objects": [
+    {
+     "id": 0,
+     "label": "bus",
+     "confidence": 0.8734,
+     "bbox": {
+      "x1": 22.9,
+      "y1": 231.3,
+      "x2": 805.0,
+      "y2": 756.8
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "large",
+      "area_ratio": 0.4698,
+      "description": "straight ahead, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 4.75,
+      "low_metres": 4.08,
+      "high_metres": 6.15,
+      "confidence": 0.45,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical bus height of 3.00 m (range 2.80-3.60 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 1,
+     "label": "person",
+     "confidence": 0.8657,
+     "bbox": {
+      "x1": 48.6,
+      "y1": 398.6,
+      "x2": 245.3,
+      "y2": 902.7
+     },
+     "position": {
+      "horizontal": "left",
+      "vertical": "middle",
+      "clock_direction": 11,
+      "clock_label": "11 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.1133,
+      "description": "on your left, at middle height, at 11 o'clock"
+     },
+     "distance": {
+      "metres": 2.8,
+      "low_metres": 2.28,
+      "high_metres": 3.38,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "label": "person",
+     "confidence": 0.8528,
+     "bbox": {
+      "x1": 669.5,
+      "y1": 392.2,
+      "x2": 809.7,
+      "y2": 877.0
+     },
+     "position": {
+      "horizontal": "right",
+      "vertical": "middle",
+      "clock_direction": 13,
+      "clock_label": "1 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0777,
+      "description": "on your right, at middle height, at 1 o'clock"
+     },
+     "distance": {
+      "metres": 2.92,
+      "low_metres": 2.37,
+      "high_metres": 3.52,
+      "confidence": 0.49,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 3,
+     "label": "person",
+     "confidence": 0.8252,
+     "bbox": {
+      "x1": 221.5,
+      "y1": 405.8,
+      "x2": 345.0,
+      "y2": 857.5
+     },
+     "position": {
+      "horizontal": "slightly_left",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0638,
+      "description": "slightly to your left, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.13,
+      "low_metres": 2.54,
+      "high_metres": 3.78,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    }
+   ],
+   "relevant_object_ids": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "relationships": [],
+   "seats": [],
+   "guidance": {
+    "message": "I can see 3 people and a bus. The most prominent is a bus straight ahead, at 12 o'clock, about 5 metres away.",
+    "details": [
+     "bus: straight ahead, at 12 o'clock, about 5 metres away",
+     "person: on your left, at 11 o'clock, about 3 metres away",
+     "person: on your right, at 1 o'clock, about 3 metres away",
+     "person: slightly to your left, at 12 o'clock, about 3 metres away"
+    ],
+    "confidence": 0.85,
+    "evidence": [
+     "4 detections above threshold",
+     "prominence = box area x confidence"
+    ],
+    "target_ids": [
+     0
+    ]
+   },
+   "reasoner": {
+    "name": "rule_based_context",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "Deterministic geometric rules over detector output (baseline; not a trained model)."
+   },
+   "disclaimer": "SmartSight gives assistive information from a single camera image. Results are estimates and can be wrong or incomplete. Keep using your cane, guide dog or other mobility aid, and confirm important information before relying on it."
+  }
+ }
+}

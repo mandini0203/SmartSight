@@ -1,0 +1,25 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.env
+# User accounts database, development JWT secret and users' item photos
+backend/data/
+# Downloaded weights (fetch with backend/scripts/download_models.py)
+backend/models/*.pt
+backend/models/clip/
+backend/models/torch/
+backend/runs/
+backend/weights/
+backend_server.log
+
+# Flutter
+frontend/.dart_tool/
+frontend/build/
+frontend/.flutter-plugins-dependencies
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/app/.cxx/
+*.iml
+.idea/

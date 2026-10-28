@@ -1,0 +1,17 @@
+{
+ "status_code": 200,
+ "body": {
+  "accepted": true,
+  "item_label": "person",
+  "detected": true,
+  "detection_confidence": 0.836,
+  "bbox": {
+   "x1": 114.9,
+   "y1": 197.4,
+   "x2": 1114.5,
+   "y2": 711.9
+  },
+  "issues": [],
+  "message": "Reference photo looks good."
+ }
+}

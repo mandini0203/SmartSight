@@ -1,0 +1,181 @@
+{
+ "status_code": 200,
+ "body": {
+  "task": "find_seat",
+  "frame": {
+   "width": 1000,
+   "height": 800,
+   "frame_id": null,
+   "captured_at": null
+  },
+  "objects": [
+   {
+    "id": 0,
+    "label": "chair",
+    "confidence": 0.9,
+    "bbox": {
+     "x1": 100.0,
+     "y1": 400.0,
+     "x2": 300.0,
+     "y2": 750.0
+    },
+    "position": {
+     "horizontal": "slightly_left",
+     "vertical": "lower",
+     "clock_direction": 11,
+     "clock_label": "11 o'clock",
+     "apparent_size": "medium",
+     "area_ratio": 0.0875,
+     "description": "slightly to your left, low in view, at 11 o'clock"
+    },
+    "distance": {
+     "metres": 1.98,
+     "low_metres": 1.52,
+     "high_metres": 2.61,
+     "confidence": 0.55,
+     "method": "known_size_pinhole",
+     "assumptions": [
+      "Assumes a typical chair height of 0.90 m (range 0.75-1.10 m).",
+      "Assumes a camera field of view of 66 degrees on the long image side.",
+      "Assumes the object is upright and roughly facing the camera."
+     ]
+    }
+   },
+   {
+    "id": 1,
+    "label": "person",
+    "confidence": 0.9,
+    "bbox": {
+     "x1": 110.0,
+     "y1": 200.0,
+     "x2": 290.0,
+     "y2": 720.0
+    },
+    "position": {
+     "horizontal": "slightly_left",
+     "vertical": "middle",
+     "clock_direction": 11,
+     "clock_label": "11 o'clock",
+     "apparent_size": "medium",
+     "area_ratio": 0.117,
+     "description": "slightly to your left, at middle height, at 11 o'clock"
+    },
+    "distance": {
+     "metres": 2.52,
+     "low_metres": 2.04,
+     "high_metres": 3.04,
+     "confidence": 0.7,
+     "method": "known_size_pinhole",
+     "assumptions": [
+      "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+      "Assumes a camera field of view of 66 degrees on the long image side.",
+      "Assumes the object is upright and roughly facing the camera."
+     ]
+    }
+   },
+   {
+    "id": 2,
+    "label": "chair",
+    "confidence": 0.85,
+    "bbox": {
+     "x1": 650.0,
+     "y1": 400.0,
+     "x2": 850.0,
+     "y2": 750.0
+    },
+    "position": {
+     "horizontal": "slightly_right",
+     "vertical": "lower",
+     "clock_direction": 13,
+     "clock_label": "1 o'clock",
+     "apparent_size": "medium",
+     "area_ratio": 0.0875,
+     "description": "slightly to your right, low in view, at 1 o'clock"
+    },
+    "distance": {
+     "metres": 1.98,
+     "low_metres": 1.52,
+     "high_metres": 2.61,
+     "confidence": 0.55,
+     "method": "known_size_pinhole",
+     "assumptions": [
+      "Assumes a typical chair height of 0.90 m (range 0.75-1.10 m).",
+      "Assumes a camera field of view of 66 degrees on the long image side.",
+      "Assumes the object is upright and roughly facing the camera."
+     ]
+    }
+   }
+  ],
+  "relevant_object_ids": [
+   2,
+   0
+  ],
+  "relationships": [],
+  "seats": [
+   {
+    "detection_id": 2,
+    "label": "chair",
+    "status": "POTENTIALLY_UNOCCUPIED",
+    "confidence": 0.64,
+    "evidence": [
+     "chair detected with confidence 0.85",
+     "no person detected overlapping the chair",
+     "a person or object hidden from the camera cannot be ruled out"
+    ],
+    "position": {
+     "horizontal": "slightly_right",
+     "vertical": "lower",
+     "clock_direction": 13,
+     "clock_label": "1 o'clock",
+     "apparent_size": "medium",
+     "area_ratio": 0.0875,
+     "description": "slightly to your right, low in view, at 1 o'clock"
+    }
+   },
+   {
+    "detection_id": 0,
+    "label": "chair",
+    "status": "LIKELY_OCCUPIED",
+    "confidence": 0.85,
+    "evidence": [
+     "chair detected with confidence 0.90",
+     "a person's box covers 82% of the chair",
+     "the person is centred over the seat and extends into its lower part",
+     "a person or object hidden from the camera cannot be ruled out"
+    ],
+    "position": {
+     "horizontal": "slightly_left",
+     "vertical": "lower",
+     "clock_direction": 11,
+     "clock_label": "11 o'clock",
+     "apparent_size": "medium",
+     "area_ratio": 0.0875,
+     "description": "slightly to your left, low in view, at 11 o'clock"
+    }
+   }
+  ],
+  "guidance": {
+   "message": "A chair that may be free is slightly to your right, at 1 o'clock, about 2 metres away. Check by touch before sitting.",
+   "details": [
+    "chair: POTENTIALLY_UNOCCUPIED (0.64)",
+    "chair: LIKELY_OCCUPIED (0.85)"
+   ],
+   "confidence": 0.64,
+   "evidence": [
+    "chair detected with confidence 0.85",
+    "no person detected overlapping the chair",
+    "a person or object hidden from the camera cannot be ruled out"
+   ],
+   "target_ids": [
+    2
+   ]
+  },
+  "reasoner": {
+   "name": "rule_based_context",
+   "version": "1.0",
+   "is_trained_model": false,
+   "description": "Deterministic geometric rules over detector output (baseline; not a trained model)."
+  },
+  "disclaimer": "SmartSight gives assistive information from a single camera image. Results are estimates and can be wrong or incomplete. Keep using your cane, guide dog or other mobility aid, and confirm important information before relying on it."
+ }
+}

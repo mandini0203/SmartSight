@@ -1,0 +1,526 @@
+{
+ "status_code": 200,
+ "body": {
+  "detection": {
+   "frame": {
+    "width": 810,
+    "height": 1080,
+    "frame_id": null,
+    "captured_at": null
+   },
+   "timestamp": "2026-10-21T11:10:55.744197Z",
+   "detections": [
+    {
+     "id": 0,
+     "label": "bus",
+     "class_id": 5,
+     "confidence": 0.8734,
+     "bbox": {
+      "x1": 22.9,
+      "y1": 231.3,
+      "x2": 805.0,
+      "y2": 756.8
+     },
+     "bbox_normalised": {
+      "x1": 0.02824,
+      "y1": 0.21415,
+      "x2": 0.99383,
+      "y2": 0.70078
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "large",
+      "area_ratio": 0.4699,
+      "description": "straight ahead, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 4.75,
+      "low_metres": 4.08,
+      "high_metres": 6.15,
+      "confidence": 0.45,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical bus height of 3.00 m (range 2.80-3.60 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 1,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8657,
+     "bbox": {
+      "x1": 48.6,
+      "y1": 398.6,
+      "x2": 245.3,
+      "y2": 902.7
+     },
+     "bbox_normalised": {
+      "x1": 0.05994,
+      "y1": 0.36903,
+      "x2": 0.3029,
+      "y2": 0.83584
+     },
+     "position": {
+      "horizontal": "left",
+      "vertical": "middle",
+      "clock_direction": 11,
+      "clock_label": "11 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.1134,
+      "description": "on your left, at middle height, at 11 o'clock"
+     },
+     "distance": {
+      "metres": 2.8,
+      "low_metres": 2.28,
+      "high_metres": 3.38,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8528,
+     "bbox": {
+      "x1": 669.5,
+      "y1": 392.2,
+      "x2": 809.7,
+      "y2": 877.0
+     },
+     "bbox_normalised": {
+      "x1": 0.82651,
+      "y1": 0.36314,
+      "x2": 0.99965,
+      "y2": 0.81207
+     },
+     "position": {
+      "horizontal": "right",
+      "vertical": "middle",
+      "clock_direction": 13,
+      "clock_label": "1 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0777,
+      "description": "on your right, at middle height, at 1 o'clock"
+     },
+     "distance": {
+      "metres": 2.92,
+      "low_metres": 2.37,
+      "high_metres": 3.52,
+      "confidence": 0.49,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 3,
+     "label": "person",
+     "class_id": 0,
+     "confidence": 0.8252,
+     "bbox": {
+      "x1": 221.5,
+      "y1": 405.8,
+      "x2": 345.0,
+      "y2": 857.5
+     },
+     "bbox_normalised": {
+      "x1": 0.27348,
+      "y1": 0.37574,
+      "x2": 0.42589,
+      "y2": 0.79402
+     },
+     "position": {
+      "horizontal": "slightly_left",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0638,
+      "description": "slightly to your left, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.13,
+      "low_metres": 2.54,
+      "high_metres": 3.78,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    }
+   ],
+   "model": {
+    "name": "YOLOv8n (pretrained)",
+    "version": "yolov8n",
+    "is_trained_model": true,
+    "description": "Ultralytics YOLOv8 pretrained on COCO 2017. Not fine-tuned for SmartSight; recognises only its 80 COCO classes.",
+    "model_file": "yolov8n.pt",
+    "task": "detect",
+    "dataset": "COCO 2017 (80 classes)",
+    "licence": "AGPL-3.0 (Ultralytics); commercial use requires an Ultralytics Enterprise licence",
+    "num_classes": 80
+   },
+   "processing": {
+    "preprocess_ms": 4.9,
+    "inference_ms": 126.2,
+    "postprocess_ms": 2.8,
+    "total_ms": 171.7,
+    "confidence_threshold": 0.35,
+    "image_size": 640,
+    "device": "cpu"
+   },
+   "notes": [
+    "Only the detector's 80 COCO classes can be recognised; see GET /api/v1/detection/classes.",
+    "Distances are approximate monocular estimates based on typical object sizes."
+   ]
+  },
+  "signs": {
+   "frame": {
+    "width": 810,
+    "height": 1080,
+    "frame_id": null,
+    "captured_at": null
+   },
+   "timestamp": "2026-10-21T11:10:56.228983Z",
+   "candidates": [
+    {
+     "kind": "exit_sign",
+     "confidence": 0.33,
+     "detector_confidence": 0.565,
+     "bbox": {
+      "x1": 428.6,
+      "y1": 150.7,
+      "x2": 527.8,
+      "y2": 193.2
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "upper",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "small",
+      "area_ratio": 0.0048,
+      "description": "straight ahead, high in view, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.91,
+      "low_metres": 2.7,
+      "high_metres": 6.34,
+      "confidence": 0.4,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     },
+     "evidence": [
+      "YOLO-World 'exit sign' score 0.56",
+      "0% of the region is vivid green",
+      "width/height ratio 2.3 (typical for an exit sign)",
+      "no typical green/red exit-sign colour; weak candidate"
+     ],
+     "sign_colour": null
+    },
+    {
+     "kind": "exit_sign",
+     "confidence": 0.13,
+     "detector_confidence": 0.223,
+     "bbox": {
+      "x1": 468.1,
+      "y1": 159.7,
+      "x2": 526.9,
+      "y2": 191.4
+     },
+     "position": {
+      "horizontal": "slightly_right",
+      "vertical": "upper",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "small",
+      "area_ratio": 0.0021,
+      "description": "slightly to your right, high in view, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 5.25,
+      "low_metres": 3.62,
+      "high_metres": 8.5,
+      "confidence": 0.4,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     },
+     "evidence": [
+      "YOLO-World 'exit sign' score 0.22",
+      "0% of the region is vivid green",
+      "width/height ratio 1.9 (typical for an exit sign)",
+      "no typical green/red exit-sign colour; weak candidate"
+     ],
+     "sign_colour": null
+    }
+   ],
+   "message": "An exit sign may be straight ahead, at 12 o'clock, about 4 metres away. Low confidence.",
+   "detector": {
+    "name": "yolo_world_door_sign",
+    "version": "yolov8s-worldv2",
+    "is_trained_model": true,
+    "description": "Pretrained open-vocabulary YOLOv8-World prompted with 'door' and 'exit sign' (not fine-tuned), verified by colour and shape rules."
+   },
+   "processing_ms": 484.1,
+   "notes": [
+    "Candidates must be confirmed by the user; signs and doors can be missed or confused."
+   ]
+  },
+  "context": {
+   "task": "find_exit",
+   "frame": {
+    "width": 810,
+    "height": 1080,
+    "frame_id": null,
+    "captured_at": null
+   },
+   "objects": [
+    {
+     "id": 0,
+     "label": "bus",
+     "confidence": 0.8734,
+     "bbox": {
+      "x1": 22.9,
+      "y1": 231.3,
+      "x2": 805.0,
+      "y2": 756.8
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "large",
+      "area_ratio": 0.4698,
+      "description": "straight ahead, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 4.75,
+      "low_metres": 4.08,
+      "high_metres": 6.15,
+      "confidence": 0.45,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical bus height of 3.00 m (range 2.80-3.60 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 1,
+     "label": "person",
+     "confidence": 0.8657,
+     "bbox": {
+      "x1": 48.6,
+      "y1": 398.6,
+      "x2": 245.3,
+      "y2": 902.7
+     },
+     "position": {
+      "horizontal": "left",
+      "vertical": "middle",
+      "clock_direction": 11,
+      "clock_label": "11 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.1133,
+      "description": "on your left, at middle height, at 11 o'clock"
+     },
+     "distance": {
+      "metres": 2.8,
+      "low_metres": 2.28,
+      "high_metres": 3.38,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "label": "person",
+     "confidence": 0.8528,
+     "bbox": {
+      "x1": 669.5,
+      "y1": 392.2,
+      "x2": 809.7,
+      "y2": 877.0
+     },
+     "position": {
+      "horizontal": "right",
+      "vertical": "middle",
+      "clock_direction": 13,
+      "clock_label": "1 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0777,
+      "description": "on your right, at middle height, at 1 o'clock"
+     },
+     "distance": {
+      "metres": 2.92,
+      "low_metres": 2.37,
+      "high_metres": 3.52,
+      "confidence": 0.49,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 3,
+     "label": "person",
+     "confidence": 0.8252,
+     "bbox": {
+      "x1": 221.5,
+      "y1": 405.8,
+      "x2": 345.0,
+      "y2": 857.5
+     },
+     "position": {
+      "horizontal": "slightly_left",
+      "vertical": "middle",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "medium",
+      "area_ratio": 0.0638,
+      "description": "slightly to your left, at middle height, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.13,
+      "low_metres": 2.54,
+      "high_metres": 3.78,
+      "confidence": 0.7,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical person height of 1.70 m (range 1.50-1.90 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 4,
+     "label": "exit sign",
+     "confidence": 0.33,
+     "bbox": {
+      "x1": 428.6,
+      "y1": 150.7,
+      "x2": 527.8,
+      "y2": 193.2
+     },
+     "position": {
+      "horizontal": "centre",
+      "vertical": "upper",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "small",
+      "area_ratio": 0.0048,
+      "description": "straight ahead, high in view, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 3.91,
+      "low_metres": 2.7,
+      "high_metres": 6.34,
+      "confidence": 0.4,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    },
+    {
+     "id": 5,
+     "label": "exit sign",
+     "confidence": 0.13,
+     "bbox": {
+      "x1": 468.1,
+      "y1": 159.7,
+      "x2": 526.9,
+      "y2": 191.4
+     },
+     "position": {
+      "horizontal": "slightly_right",
+      "vertical": "upper",
+      "clock_direction": 12,
+      "clock_label": "12 o'clock",
+      "apparent_size": "small",
+      "area_ratio": 0.0021,
+      "description": "slightly to your right, high in view, at 12 o'clock"
+     },
+     "distance": {
+      "metres": 5.25,
+      "low_metres": 3.62,
+      "high_metres": 8.5,
+      "confidence": 0.4,
+      "method": "known_size_pinhole",
+      "assumptions": [
+       "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+       "Assumes a camera field of view of 66 degrees on the long image side.",
+       "Assumes the object is upright and roughly facing the camera."
+      ]
+     }
+    }
+   ],
+   "relevant_object_ids": [
+    4,
+    5
+   ],
+   "relationships": [],
+   "seats": [],
+   "guidance": {
+    "message": "An exit sign may be straight ahead, at 12 o'clock, about 4 metres away. This is a weak candidate; please confirm it.",
+    "details": [
+     "exit sign (33%): straight ahead, at 12 o'clock, about 4 metres away",
+     "exit sign (13%): slightly to your right, at 12 o'clock, about 5 metres away"
+    ],
+    "confidence": 0.33,
+    "evidence": [
+     "'exit sign' candidate with confidence 0.33"
+    ],
+    "target_ids": [
+     4
+    ]
+   },
+   "reasoner": {
+    "name": "rule_based_context",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "Deterministic geometric rules over detector output (baseline; not a trained model)."
+   },
+   "disclaimer": "SmartSight gives assistive information from a single camera image. Results are estimates and can be wrong or incomplete. Keep using your cane, guide dog or other mobility aid, and confirm important information before relying on it."
+  }
+ }
+}

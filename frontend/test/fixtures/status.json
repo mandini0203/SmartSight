@@ -1,0 +1,95 @@
+{
+ "status_code": 200,
+ "body": {
+  "status": "ok",
+  "version": "1.0.0",
+  "detector": {
+   "ready": true,
+   "component": {
+    "name": "YOLOv8n (pretrained)",
+    "version": "yolov8n",
+    "is_trained_model": true,
+    "description": "Ultralytics YOLOv8 pretrained on COCO 2017. Not fine-tuned for SmartSight; recognises only its 80 COCO classes."
+   },
+   "note": null
+  },
+  "detector_model": {
+   "name": "YOLOv8n (pretrained)",
+   "version": "yolov8n",
+   "is_trained_model": true,
+   "description": "Ultralytics YOLOv8 pretrained on COCO 2017. Not fine-tuned for SmartSight; recognises only its 80 COCO classes.",
+   "model_file": "yolov8n.pt",
+   "task": "detect",
+   "dataset": "COCO 2017 (80 classes)",
+   "licence": "AGPL-3.0 (Ultralytics); commercial use requires an Ultralytics Enterprise licence",
+   "num_classes": 80
+  },
+  "door_sign": {
+   "ready": true,
+   "component": {
+    "name": "yolo_world_door_sign",
+    "version": "yolov8s-worldv2",
+    "is_trained_model": true,
+    "description": "Pretrained open-vocabulary YOLOv8-World prompted with 'door' and 'exit sign' (not fine-tuned), verified by colour and shape rules."
+   },
+   "note": null
+  },
+  "item_matcher": {
+   "ready": true,
+   "component": {
+    "name": "embedding_matcher",
+    "version": "1.0",
+    "is_trained_model": true,
+    "description": "ImageNet-pretrained MobileNetV3-Small features (not fine-tuned) + colour histogram + ORB keypoints. Thresholds are uncalibrated defaults."
+   },
+   "note": null
+  },
+  "colour": {
+   "ready": true,
+   "component": {
+    "name": "kmeans_lab",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "k-means clustering in CIELAB with CIEDE2000 nearest named colour."
+   },
+   "note": null
+  },
+  "context": {
+   "ready": true,
+   "component": {
+    "name": "rule_based_context",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "Deterministic geometric rules over detector output (baseline; not a trained model)."
+   },
+   "note": null
+  },
+  "intent": {
+   "ready": true,
+   "component": {
+    "name": "rule_based_intent",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "Keyword/regex rules with weighted scoring (baseline; not a trained model)."
+   },
+   "note": null
+  },
+  "distance": {
+   "ready": true,
+   "component": {
+    "name": "known_size_pinhole",
+    "version": "1.0",
+    "is_trained_model": false,
+    "description": "Calibrated monocular distance from typical object sizes and camera field of view."
+   },
+   "note": null
+  },
+  "limits": {
+   "max_upload_bytes": 8388608.0,
+   "max_image_side": 6000.0,
+   "inference_timeout_seconds": 20.0,
+   "detection_confidence": 0.35
+  },
+  "load_errors": {}
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "status_code": 200,
+ "body": {
+  "frame": {
+   "width": 810,
+   "height": 1080,
+   "frame_id": null,
+   "captured_at": null
+  },
+  "region": {
+   "x1": 22.87126922607422,
+   "y1": 231.27731323242188,
+   "x2": 805.0026245117188,
+   "y2": 756.8404541015625
+  },
+  "region_source": "detection:bus",
+  "primary": {
+   "name": "black",
+   "family": "black",
+   "hex": "#242836",
+   "rgb": [
+    36,
+    40,
+    54
+   ],
+   "fraction": 0.481,
+   "delta_e": 10.4
+  },
+  "colours": [
+   {
+    "name": "black",
+    "family": "black",
+    "hex": "#242836",
+    "rgb": [
+     36,
+     40,
+     54
+    ],
+    "fraction": 0.481,
+    "delta_e": 10.4
+   },
+   {
+    "name": "grey",
+    "family": "grey",
+    "hex": "#80746e",
+    "rgb": [
+     128,
+     116,
+     110
+    ],
+    "fraction": 0.203,
+    "delta_e": 7.3
+   },
+   {
+    "name": "blue",
+    "family": "blue",
+    "hex": "#2c619e",
+    "rgb": [
+     44,
+     97,
+     158
+    ],
+    "fraction": 0.191,
+    "delta_e": 6.1
+   },
+   {
+    "name": "light grey",
+    "family": "grey",
+    "hex": "#cbc5bf",
+    "rgb": [
+     203,
+     197,
+     191
+    ],
+    "fraction": 0.126,
+    "delta_e": 4.0
+   }
+  ],
+  "confidence": 0.31,
+  "message": "It looks black. I'm not confident about this.",
+  "identifier": {
+   "name": "kmeans_lab",
+   "version": "1.0",
+   "is_trained_model": false,
+   "description": "k-means clustering in CIELAB with CIEDE2000 nearest named colour."
+  },
+  "caveats": [
+   "Colour depends on lighting and the camera's white balance.",
+   "The region may include background or shadows."
+  ]
+ }
+}

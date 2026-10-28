@@ -1,0 +1,112 @@
+{
+ "status_code": 200,
+ "body": {
+  "status": "FOUND",
+  "item_name": "test",
+  "item_label": "person",
+  "frame": {
+   "width": 1280,
+   "height": 720,
+   "frame_id": null,
+   "captured_at": null
+  },
+  "best": {
+   "detection_label": "person",
+   "detection_confidence": 0.836,
+   "bbox": {
+    "x1": 114.9,
+    "y1": 197.4,
+    "x2": 1114.5,
+    "y2": 711.9
+   },
+   "position": {
+    "horizontal": "centre",
+    "vertical": "middle",
+    "clock_direction": 12,
+    "clock_label": "12 o'clock",
+    "apparent_size": "large",
+    "area_ratio": 0.558,
+    "description": "straight ahead, at middle height, at 12 o'clock"
+   },
+   "similarity": 1.0,
+   "similarity_components": {
+    "embedding_cosine": 1.0,
+    "embedding": 1.0,
+    "colour": 1.0,
+    "keypoints": 1.0
+   },
+   "decision": "MATCH"
+  },
+  "candidates": [
+   {
+    "detection_label": "person",
+    "detection_confidence": 0.836,
+    "bbox": {
+     "x1": 114.9,
+     "y1": 197.4,
+     "x2": 1114.5,
+     "y2": 711.9
+    },
+    "position": {
+     "horizontal": "centre",
+     "vertical": "middle",
+     "clock_direction": 12,
+     "clock_label": "12 o'clock",
+     "apparent_size": "large",
+     "area_ratio": 0.558,
+     "description": "straight ahead, at middle height, at 12 o'clock"
+    },
+    "similarity": 1.0,
+    "similarity_components": {
+     "embedding_cosine": 1.0,
+     "embedding": 1.0,
+     "colour": 1.0,
+     "keypoints": 1.0
+    },
+    "decision": "MATCH"
+   },
+   {
+    "detection_label": "person",
+    "detection_confidence": 0.819,
+    "bbox": {
+     "x1": 748.5,
+     "y1": 41.9,
+     "x2": 1143.1,
+     "y2": 713.0
+    },
+    "position": {
+     "horizontal": "slightly_right",
+     "vertical": "middle",
+     "clock_direction": 13,
+     "clock_label": "1 o'clock",
+     "apparent_size": "large",
+     "area_ratio": 0.2873,
+     "description": "slightly to your right, at middle height, at 1 o'clock"
+    },
+    "similarity": 0.721,
+    "similarity_components": {
+     "embedding_cosine": 0.744,
+     "embedding": 0.534,
+     "colour": 0.91,
+     "keypoints": 1.0
+    },
+    "decision": "POSSIBLE_MATCH"
+   }
+  ],
+  "message": "This looks like test, straight ahead, at 12 o'clock.",
+  "matcher": {
+   "name": "embedding_matcher",
+   "version": "1.0",
+   "is_trained_model": true,
+   "description": "ImageNet-pretrained MobileNetV3-Small features (not fine-tuned) + colour histogram + ORB keypoints. Thresholds are uncalibrated defaults."
+  },
+  "thresholds": {
+   "match": 0.8,
+   "possible_match": 0.65
+  },
+  "notes": [
+   "Similarity thresholds are uncalibrated defaults; evaluate with your own photos.",
+   "Items of the same model and colour may be indistinguishable."
+  ]
+ }
+}

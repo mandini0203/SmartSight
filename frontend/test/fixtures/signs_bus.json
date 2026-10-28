@@ -1,0 +1,103 @@
+{
+ "status_code": 200,
+ "body": {
+  "frame": {
+   "width": 810,
+   "height": 1080,
+   "frame_id": null,
+   "captured_at": null
+  },
+  "timestamp": "2026-10-21T11:10:56.695729Z",
+  "candidates": [
+   {
+    "kind": "exit_sign",
+    "confidence": 0.33,
+    "detector_confidence": 0.565,
+    "bbox": {
+     "x1": 428.6,
+     "y1": 150.7,
+     "x2": 527.8,
+     "y2": 193.2
+    },
+    "position": {
+     "horizontal": "centre",
+     "vertical": "upper",
+     "clock_direction": 12,
+     "clock_label": "12 o'clock",
+     "apparent_size": "small",
+     "area_ratio": 0.0048,
+     "description": "straight ahead, high in view, at 12 o'clock"
+    },
+    "distance": {
+     "metres": 3.91,
+     "low_metres": 2.7,
+     "high_metres": 6.34,
+     "confidence": 0.4,
+     "method": "known_size_pinhole",
+     "assumptions": [
+      "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+      "Assumes a camera field of view of 66 degrees on the long image side.",
+      "Assumes the object is upright and roughly facing the camera."
+     ]
+    },
+    "evidence": [
+     "YOLO-World 'exit sign' score 0.56",
+     "0% of the region is vivid green",
+     "width/height ratio 2.3 (typical for an exit sign)",
+     "no typical green/red exit-sign colour; weak candidate"
+    ],
+    "sign_colour": null
+   },
+   {
+    "kind": "exit_sign",
+    "confidence": 0.13,
+    "detector_confidence": 0.223,
+    "bbox": {
+     "x1": 468.1,
+     "y1": 159.7,
+     "x2": 526.9,
+     "y2": 191.4
+    },
+    "position": {
+     "horizontal": "slightly_right",
+     "vertical": "upper",
+     "clock_direction": 12,
+     "clock_label": "12 o'clock",
+     "apparent_size": "small",
+     "area_ratio": 0.0021,
+     "description": "slightly to your right, high in view, at 12 o'clock"
+    },
+    "distance": {
+     "metres": 5.25,
+     "low_metres": 3.62,
+     "high_metres": 8.5,
+     "confidence": 0.4,
+     "method": "known_size_pinhole",
+     "assumptions": [
+      "Assumes a typical exit sign height of 0.20 m (range 0.15-0.30 m).",
+      "Assumes a camera field of view of 66 degrees on the long image side.",
+      "Assumes the object is upright and roughly facing the camera."
+     ]
+    },
+    "evidence": [
+     "YOLO-World 'exit sign' score 0.22",
+     "0% of the region is vivid green",
+     "width/height ratio 1.9 (typical for an exit sign)",
+     "no typical green/red exit-sign colour; weak candidate"
+    ],
+    "sign_colour": null
+   }
+  ],
+  "message": "An exit sign may be straight ahead, at 12 o'clock, about 4 metres away. Low confidence.",
+  "detector": {
+   "name": "yolo_world_door_sign",
+   "version": "yolov8s-worldv2",
+   "is_trained_model": true,
+   "description": "Pretrained open-vocabulary YOLOv8-World prompted with 'door' and 'exit sign' (not fine-tuned), verified by colour and shape rules."
+  },
+  "processing_ms": 375.6,
+  "notes": [
+   "Candidates must be confirmed by the user; signs and doors can be missed or confused."
+  ]
+ }
+}

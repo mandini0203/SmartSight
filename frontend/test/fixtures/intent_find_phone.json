@@ -1,0 +1,33 @@
+{
+ "status_code": 200,
+ "body": {
+  "status": "RESOLVED",
+  "intent": "find_object",
+  "slots": {
+   "target_object": "phone",
+   "target_label": "cell phone",
+   "target_supported_by_detector": true,
+   "personal": true
+  },
+  "confidence": 1.0,
+  "matched_rules": [
+   "find_verb",
+   "object_slot_present"
+  ],
+  "alternatives": [
+   {
+    "intent": "find_object",
+    "score": 1.0
+   }
+  ],
+  "clarification_question": null,
+  "message": "Looking for your phone.",
+  "normalised_text": "where is my phone",
+  "resolver": {
+   "name": "rule_based_intent",
+   "version": "1.0",
+   "is_trained_model": false,
+   "description": "Keyword/regex rules with weighted scoring (baseline; not a trained model)."
+  }
+ }
+}

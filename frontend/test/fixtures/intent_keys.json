@@ -1,0 +1,33 @@
+{
+ "status_code": 200,
+ "body": {
+  "status": "UNSUPPORTED",
+  "intent": "find_object",
+  "slots": {
+   "target_object": "keys",
+   "target_label": null,
+   "target_supported_by_detector": false,
+   "personal": true
+  },
+  "confidence": 1.0,
+  "matched_rules": [
+   "find_verb",
+   "object_slot_present"
+  ],
+  "alternatives": [
+   {
+    "intent": "find_object",
+    "score": 1.0
+   }
+  ],
+  "clarification_question": null,
+  "message": "I can't recognise keys yet. The current detector knows objects such as phones, bags, backpacks, bottles, cups, laptops, books and remotes.",
+  "normalised_text": "find my keys",
+  "resolver": {
+   "name": "rule_based_intent",
+   "version": "1.0",
+   "is_trained_model": false,
+   "description": "Keyword/regex rules with weighted scoring (baseline; not a trained model)."
+  }
+ }
+}
